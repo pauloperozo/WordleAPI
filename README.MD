@@ -21,9 +21,7 @@ Wordle API: Este es un proyecto de prueba técnica que utiliza Node.js, TypeScri
 }
 ```
 
-# Rutas protegidas por token o cookies
-
-## POST /wordle/play
+## POST /wordle/play ( Protected token | cookies) 
 - Juega al juego Wordle enviando una palabra:
 ```
 {
@@ -31,13 +29,13 @@ Wordle API: Este es un proyecto de prueba técnica que utiliza Node.js, TypeScri
 }
 ```
 
-## GET /wordle/amount
+## GET /wordle/amount ( Protected token | cookies) 
 - Obtiene la cantidad de partidas jugadas.
 
-## GET /wordle/top
+## GET /wordle/top ( Protected token | cookies) 
 - Obtiene el ranking de los mejores jugadores.
 
-## GET /wordle/match
+## GET /wordle/match ( Protected token | cookies) 
 - Obtiene las partidas que contiene la palabra mas ranqueada.
  
 ## collections cliente postman:
