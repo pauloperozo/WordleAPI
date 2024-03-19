@@ -73,7 +73,7 @@ $ npm run test
 ## GET /wordle/match ( Protected ) 
 - Obtiene las partidas que contiene la palabra mas ranqueada.
  
-## collections cliente postman:
+## Collections client postman:
 - /doc/wordleAPI.postman_collection.json
 
 <p align="center">
