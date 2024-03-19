@@ -7,7 +7,7 @@
 
 ## Description
 
-Wordle API: Este es un proyecto de prueba técnica que utiliza Node.js, TypeScript, TypeORM y PostgreSQL. A continuación, se describen los endpoints disponibles:
+Wordle API: Este es un proyecto de prueba técnica que utiliza Node.js, TypeScript, TypeORM y PostgreSQL entre otros...
 
 ## Installation
 
@@ -15,7 +15,7 @@ Wordle API: Este es un proyecto de prueba técnica que utiliza Node.js, TypeScri
 $ npm install
 ```
 
-## Running the app
+## Running
 
 ```bash
 # development
@@ -25,7 +25,7 @@ $ npm run dev
 $ npm run start
 
 
-# build
+# Build
 $ npm run build
 ```
 
@@ -36,7 +36,7 @@ $ npm run build
 $ npm run test
 ```
 
-## Stay in touch
+## Developer
 
 - Author - paulo perozo
 - Website - https://www.linkedin.com/in/paulo-perozo-0738a4240/
