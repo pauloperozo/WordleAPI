@@ -39,7 +39,7 @@ $ npm run test
 - Website - https://www.linkedin.com/in/paulo-perozo-0738a4240/
 - Twitter - https://twitter.com/PauloPerozo
 
-## Registro de usuario- POST /auth/signup
+## POST /auth/signup ( Public )
 - Crea un nuevo usuario con los siguientes datos:
 ```
 {
@@ -47,7 +47,7 @@ $ npm run test
     "password": "123"
 }
 ```
-## Inicio de sesión- POST /auth/signin
+## POST /auth/signin ( Public )
 - Inicia sesión con los siguientes datos:
 ```
 {
@@ -56,7 +56,7 @@ $ npm run test
 }
 ```
 
-## POST /wordle/play ( Protected token | cookies) 
+## POST /wordle/play ( Protected ) 
 - Juega al juego Wordle enviando una palabra:
 ```
 {
@@ -64,13 +64,13 @@ $ npm run test
 }
 ```
 
-## GET /wordle/amount ( Protected token | cookies) 
+## GET /wordle/amount ( Protected )
 - Obtiene la cantidad de partidas jugadas.
 
-## GET /wordle/top ( Protected token | cookies) 
+## GET /wordle/top ( Protected ) 
 - Obtiene el ranking de los mejores jugadores.
 
-## GET /wordle/match ( Protected token | cookies) 
+## GET /wordle/match ( Protected ) 
 - Obtiene las partidas que contiene la palabra mas ranqueada.
  
 ## collections cliente postman:
