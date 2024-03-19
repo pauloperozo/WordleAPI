@@ -1,9 +1,6 @@
 <p align="center">
-  <a href="" target="blank"><img src="https://1000logos.net/wp-content/uploads/2023/05/Wordle-Emblem.png" width="200" alt="Nest Logo" /></a>
+  <a href="" target="blank"><img src="https://1000logos.net/wp-content/uploads/2023/05/Wordle-Emblem.png" width="200" alt="Wordle Logo" /></a>
 </p>
-
-
-
 
 ## Description
 
@@ -78,3 +75,10 @@ $ npm run test
  
 ## collections cliente postman:
 - /doc/wordleAPI.postman_collection.json
+
+<p align="center">
+  <a href="" target="blank"><img src="https://www.artistapirata.com/wp-content/uploads/2018/12/programas-full-linux-descargar-programas-linux-300x181.jpg" width="200" alt="zzzz" /></a>
+</p>
+
+
+
