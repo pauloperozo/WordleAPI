@@ -37,4 +37,5 @@ Rutas protegidas por token o cookies-
 ## GET /wordle/match
 - Obtiene las partidas que contiene la palabra mas ranqueada.
  
-- Archivo Para cliente postma /doc/wordleAPI.postman_collection.json
+## Archivo Para cliente postma
+- /doc/wordleAPI.postman_collection.json
