@@ -1,14 +1,14 @@
 import { Request, Response }  from 'express'
 import HttpError from '../helpers/error'
 import { wordleService } from '../../aplications/services/WordService'
-import moment from 'moment'
 import { Wordle } from '../../aplications/entities/Wordle'
 import { DictionaryService } from '../../aplications/services/DictionaryService'
 import { env } from 'node:process';
+import moment from 'moment'
 
-export class wordleController {
+export class WordleController {
 
-    static async Play( req:Request, res:Response ) {
+    async Play( req:Request, res:Response ) {
         
         try {
             
@@ -62,7 +62,7 @@ export class wordleController {
         }
     }
 
-    static async Amount( req:Request, res:Response ) {
+    async Amount( req:Request, res:Response ) {
                
         try {
  
@@ -78,7 +78,7 @@ export class wordleController {
         }
     } 
 
-    static async Top( req:Request, res:Response ) {
+    async Top( req:Request, res:Response ) {
 
         try {
        
@@ -91,7 +91,7 @@ export class wordleController {
         }
     }
 
-    static async Match( req:Request, res:Response ) {
+    async Match( req:Request, res:Response ) {
 
         try {
        

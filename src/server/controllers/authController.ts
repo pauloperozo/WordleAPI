@@ -5,19 +5,25 @@ import { UserService } from '../../aplications/services/UserService'
 
 export class AuthController {
 
-    static async SignUp( req:Request, res:Response ) {
+    private userService     
+
+    constructor(){
+        this.userService = new UserService()
+    }
+
+    async SignUp( req:Request, res:Response ) {
 
         try {
         
             const { email,password } = req.body
-            const result = await UserService.findOneByEmail( email)
+            const result = await this.userService.findOneByEmail( email)
             if( result ) throw new Error('email already registered')
 
             const user = new User()
                   user.email  = email
-                  user.password =  await UserService.HashPassword( password )
+                  user.password =  await this.userService.HashPassword( password )
 
-            await UserService.Create( user )
+            await this.userService.Create( user )
             res.status(200).json({ message:"SignUp Success."})
 
         } catch ( error ) {           
@@ -27,20 +33,20 @@ export class AuthController {
 
     }
 
-    static async SignIn( req:Request, res:Response ) {
+    async SignIn( req:Request, res:Response ) {
 
         try {
         
             const { email,password } = req.body
 
-            const user = await UserService.findOneByEmail( email )
+            const user = await this.userService.findOneByEmail( email )
             if(! user ) throw new Error('Unauthorized access.')
 
-            const equalPassword = await UserService.ComparePassword( password, user.password )
+            const equalPassword = await this.userService.ComparePassword( password, user.password )
             if(!equalPassword) throw new Error('Unauthorized access.')
 
             const { userId, created_at } = user
-            const token =  UserService.GenerateToken( { userId,created_at} )
+            const token =  this.userService.GenerateToken( { userId,created_at} )
             res.status(200).cookie('token', token ).json({ message : 'success', token }) 
 
         } catch ( error ) {           
